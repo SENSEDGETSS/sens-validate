@@ -33,7 +33,8 @@ function Independent_Validation(event) {
 
 //Form Validation Function
 export function validateAll(FormId) { // FormId is the ID of the form
-    if (validateFormInputs(FormId)) { // Call validateFormInputs and pass FormId
+    let validValue = validateFormInputs(FormId);
+    if (validValue) { // Call validateFormInputs and pass FormId
         return true; // Return true if the form is valid
     } else {
         return false; // Return false if the form is invalid
@@ -46,18 +47,23 @@ function validateFormInputs(FormId) {
     if (!form) return false; // Check if the form exists
     // let inputs = form.querySelectorAll('input[data-sensval]'); // Get all the input elements with 'data-sensval' attribute
     let inputs = form.querySelectorAll('[data-sensval]');
-
-    let isValid = true; // Initialize isValid to true
-
+    let ValidationAry = [];
     inputs.forEach(input => { // Loop through all the input elements
         let sensval = input.getAttribute('data-sensval');
         let value = input.value; // Get the value of the input element
         let validations = sensval.split('-'); // Split the 'data-sensval' attribute value if it contains '-'
         validations.forEach(validation => { // Loop through all the validations
-            mainValidation(validation, input, value);  // Call MainValidation for each case
+            let result = mainValidation(validation, input, value);  // Call MainValidation for each case
+            if(result !== undefined){
+                ValidationAry.push(result); // Return
+            }
         });
     });
-    return isValid; // Return isValid
+    if (ValidationAry.includes(false) || ValidationAry.includes('false')) {
+        return false;
+    } else {
+        return true;
+    }
 }
 //Validation Main Function{Validate the All Input Elements}
 function mainValidation(CaseValue, input, value) {

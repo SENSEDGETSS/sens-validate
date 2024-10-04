@@ -72,7 +72,7 @@
 ## 9. Form Validation: 
         Use a button with an onclick event to trigger the validateForm function. 
         This function calls ValidateAll with the form’s ID to check all input fields in the form for validity.
-## 10 Including the Validation Script:
+## 10. Including the Validation Script:
       Make sure to include the “sensval.min.js” script in your HTML file to enable validation functionality.
 ```html
 	Ex: 
