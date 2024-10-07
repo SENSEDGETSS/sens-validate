@@ -54,10 +54,10 @@
 	</form>
 ```
 ### 2.6	Independent Validation:
-	By using the data-sensval attribute, each input field can be validated in real-time. 
- 	This allows validation to occur dynamically, such as when a user changes the input. 
-  	As soon as the input changes, the specific field is instantly validated, providing 
-   	immediate feedback and ensuring data accuracy throughout the process.
+	By using the data-sensval attribute, each input field can be validated in real-time. This allows 
+ 	validation to occur dynamically, such as when a user changes the input. As soon as the input changes, 
+  	the specific field is instantly validated, providing immediate feedback and ensuring data accuracy 
+   	throughout the process.
 
 
 
