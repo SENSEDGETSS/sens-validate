@@ -28,6 +28,9 @@
 	Using By CDN
  ```html
 	[Link](https://cdn.jsdelivr.net/gh/SENSEDGETSS/sens-validate@main/sensval.min.js)
+
+	[Section 'Features'](#ssFeatures) 
+	## Features <a id='ssFeatures'></a>
 ```
 ## Single Validation
 	Use the data-sensval attribute to specify what kind of validation you want for each input field. 
