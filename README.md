@@ -25,6 +25,10 @@
 	Ex:
 	<npm install sensedge-validation>
 ```
+	Using By CDN
+ ```html
+	https://cdn.jsdelivr.net/gh/SENSEDGETSS/sens-validate@main/sensval.min.js
+```
 ## Single Validation
 	Use the data-sensval attribute to specify what kind of validation you want for each input field. 
 	For example, data-sensval="TX" ensures the input contains text only.
