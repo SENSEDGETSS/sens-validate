@@ -18,9 +18,10 @@
 	<script src="sensval.min.js"></script>
 	This manual provides detailed instructions on single and multiple validations,
 	as well as user-defined validation rules.
-
-	### Using by NPM
+```
+	Using by NPM
 	To use the sensedge-validation package in your project, first, install it via npm.
+ ```html
 	Ex:
 	<npm install sensedge-validation>
 ```
