@@ -1,36 +1,79 @@
 # Form Validation - User Manual
-## Version 1.0.1
+## Version 1.0.4
 # Document Control Sheet
 
-## 1. Abstract
-        This document outlines the process of implementing form validation using the sensval.min.js script.  
-        It describes various validation rules that can be applied to form fields, ensuring data integrity and user input correctness.
-## 2. Objective
-        The objective of this document is to provide a comprehensive guide to implementing form validation in web applications. 
-        It is intended for developers who need to validate user inputs to maintain data quality and prevent invalid submissions.
-## 3. How to Use
-        To use the validation rules, include the sensval.min.js script in your HTML file and apply the data-sensval attribute to input fields that require validation. 
-        This manual covers single and multiple validations, as well as user-defined validation rules.
-## 4. Summary
-        Form validation is a critical aspect of web development to ensure data entered by users is accurate and secure. 
-        This document provides step-by-step instructions to implement robust validation rules using the sensval.min.js script.
+## 1. Why SENSVAL
+        Traditional validation methods often require users to create separate functions for each input field and form, which can be time-consuming 
+	and complex. The sensval library simplifies this process by providing a unified solution for validating all types of input fields and forms. 
+ 	With sensval, users can easily implement validation by adding a data-sensval attribute to the relevant input fields and forms, 
+  	streamlining the entire process and saving valuable development time.
+## 2. How to Use
+### 2.1 Installation
+        To use the validation rules outlined in this document, include the sensval.min.js script in your HTML file and 
+	apply the data-sensval attribute to the input fields that require validation.
+ ```html
+	Ex:
+	<script src="sensval.min.js"></script>
+	This manual provides detailed instructions on single and multiple validations, as well as user-defined validation rules.
+
+```
+### 2.2 Single Validation
+	Use the data-sensval attribute to specify what kind of validation you want for each input field. 
+	For example, data-sensval="TX" ensures the input contains text only.
+ ```html
+	Ex:
+	<input type="text" data-sensval="TX">
+```
+### 2.3	Multiple Validations:
+	You can apply more than one validation type to a field by separating them with a ‘hyphen(-)’ in the data-sensval attribute. 
+ 	For example, data-sensval="TX-MN" makes sure the field is both text-only and mandatory.
+```html
+	Ex:
+	<input type=” text” data-sensval= “TX-MN”>
+```
+### 2.4	User-Defined Values for Validation:
+	You can specify extra details for certain validations. 
+ 	For example, if you want to check that a number has exactly 10 digits, use data-sensval="NL#10".
+```html	
+ 	Ex:
+	<input type=” text” data-sensval=”NL#10”>
+```
+### 2.5	Form Validation: 
+	Use a button with an onclick event to trigger the validateForm function. 
+ 	This function calls ValidateAll with the form’s id to check all input fields in the form for validity.
+```html
+	Ex:
+	<form id="formId">
+	    <input type="text" data-sensval = "MN">
+	    <input type="text" data-sensval = "AN">
+	    <button onclick="ValidateAll('formId')">Submit</button>
+	</form>
+```
+### 2.6	Independent Validation:
+	By using the data-sensval attribute, each input field can be validated in real-time. 
+ 	This allows validation to occur dynamically, such as when a user changes the input. As soon as the input changes, 
+  	the specific field is instantly validated, providing immediate feedback and ensuring data accuracy throughout the process.
+
+
+
+
 ## 5. Validations
         
 | Abbreviation | Field Type            | Validation Rule                                                                                                     |
 |--------------|-----------------------|---------------------------------------------------------------------------------------------------------------------|
 | MN           | Mandatory Field       | Ensures that the input is not empty.                                                                                |
 | EM           | Email Address         | Validates that the input is a properly formatted email address.                                                     |
-| PS           | Password Strength     | Ensures the password includes uppercase, lowercase, numbers, special characters, and a minimum length (e.g., PS#8). |
+| PS           | Password Strength     | Ensures the password includes uppercase, lowercase, numbers, special characters, and a minimum length defined by the user (e.g., PS#8). |
 | TX           | Text Only             | Allows only letters and spaces in the input field.                                                                  |
-| NM           | Number Only           | Allows only numeric characters in the input field.                                                                  |
-| NL           | Number Length         | Validates that the length has the exact number of digits specified by the user (e.g., NL#10).                       |
+| NM           | Number Only           | Allows numeric characters in the input field.                                                                  |
+| NL           | Number Length         | Validates that the length has the exact number of digits specified by the user (e.g., NL#10). Like, Credit Card, CVV, ZipCode, Phone No.....  |
 | DT           | Date                  | Ensures the input is a valid date.                                                                                  |
 | UL           | URL                   | Validates that the input is a properly formatted URL.                                                               |
 | ML           | Minimum Length        | Ensures the input is at least a certain number of characters as defined by the user (e.g., ML#5).                   |
 | XL           | Maximum Length        | Ensures the input does not exceed a certain number of characters as defined by the user (e.g., XL#20).              |
-| CR           | Checkbox Required     | Ensures the checkbox is checked.                                                                                    |
-| SO           | Select Option         | Ensures that the field does not select a 0th index value.                                                           |
-| FT           | File Type             | Ensures that the uploaded file has one of the allowed extensions (e.g., FT#pdf, jpg).                                |
+| CR           | Checkbox Required     | It Ensures the checkbox status.                                                                                    |
+| SO           | Select Option         | Ensures the field does not select a 0th index value.                                                           |
+| FT           | File Type             | Ensures the uploaded file has one of the allowed extensions specified by the user (e.g., FT#pdf, jpg).                                |
 | IP           | IP Address            | Ensures the input is a valid IPv4 address.                                                                          |
 | DB           | Date of Birth         | Ensures the input date is before today (validates that the user was born before today).                              |
 | AN           | Alpha Numeric         | Allows only letters and numbers in the input field.                                                                 |
@@ -46,40 +89,10 @@
 
 ### Note:
         1. “MN” – the Input field Attribute value.
-        2.“PN#10” – ‘PN’-Mean by the Input Attribute value,10 Defined the input field minimum length.
+        2.“NL#10” – ‘NL’-Mean by the Input Attribute value, 10 Defined the input field minimum length.
 
-## 6. Single Validation:
-        Use the data-sensval attribute to specify what kind of validation you want for each input field. 
-        For example, data-sensval="EM" ensures the input is a valid email address.
-```html
-        Ex:
-        <input type="email" data-sensval="EM">
-```
-## 7. Multiple Validations:
-        You can apply more than one validation type to a field by separating them with a hyphen in the data-sensval attribute. 
-        For example, data-sensval="EM-MN" makes sure the field is both a valid email and mandatory.
-```html
-        Ex:
-        <input type=” email” data-sensval= “EM-MN”>
-```
-## 8. User-Defined Values for Validation:
-        You can specify extra details for certain validations. For example, 
-        if you want to check that a phone number has exactly 10 digits, use data-sensval="PN#10".
-```html
-        Ex:
-        <input type=” number” data-sensval=”PN#10”>
-```
-## 9. Form Validation: 
-        Use a button with an onclick event to trigger the validateForm function. 
-        This function calls ValidateAll with the form’s ID to check all input fields in the form for validity.
-## 10. Including the Validation Script:
-      Make sure to include the “sensval.min.js” script in your HTML file to enable validation functionality.
-```html
-	Ex: 
-        <script src="js/sensval.min.js"></script>
-```
 
--- Sensedge tss
+
 
 
 
