@@ -22,7 +22,7 @@
 	### Using by NPM
 	To use the sensedge-validation package in your project, first, install it via npm.
 	Ex:
-	npm install sensedge-validation 
+	<npm install sensedge-validation>
 ```
 ## Single Validation
 	Use the data-sensval attribute to specify what kind of validation you want for each input field. 
