@@ -3,8 +3,8 @@
 # Document Control Sheet
 
 ## 1. Why SENSVAL
-        Traditional validation methods often require users to create separate functions 
-	for each input field and form, which can be time-consuming and complex. 
+        Traditional validation methods often require users to create separate functions for each input 
+	field and form, which can be time-consuming and complex. 
  	The sensval library simplifies this process by providing a unified solution 
   	for validating all types of input fields and forms. With sensval, users can 
    	easily implement validation by adding a data-sensval attribute to the 
