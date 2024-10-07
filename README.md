@@ -4,22 +4,22 @@
 
 ## Why SENSVAL
 Traditional validation methods often require users to create separate functions for each input 
-	field and form, which can be time-consuming and complex. The sensval library simplifies this 
- 	process by providing a unified solution for validating all types of input fields and forms. 
-  	With sensval, users can easily implement validation by adding a data-sensval attribute to the 
-  	relevant input fields and forms, streamlining the entire process and saving valuable 
-   	development time.
+field and form, which can be time-consuming and complex. The sensval library simplifies this 
+process by providing a unified solution for validating all types of input fields and forms. 
+With sensval, users can easily implement validation by adding a data-sensval attribute to the 
+relevant input fields and forms, streamlining the entire process and saving valuable 
+development time.
 ## How to Use
 ## Installation
-        To use the validation rules outlined in this document, include the sensval.min.js script in 
-	your HTML file and apply the data-sensval attribute to the input fields that require validation.
+To use the validation rules outlined in this document, include the sensval.min.js script in 
+your HTML file and apply the data-sensval attribute to the input fields that require validation.
  ```html
 	Ex:
 	<script src="sensval.min.js"></script>
 	This manual provides detailed instructions on single and multiple validations,
 	as well as user-defined validation rules.
 ```
-	Using by NPM
+Using by NPM
 	To use the sensedge-validation package through npm.
  ```html
 	Ex:
@@ -29,30 +29,30 @@ Traditional validation methods often require users to create separate functions 
 [https://cdn.jsdelivr.net/gh/SENSEDGETSS/sens-validate@main/sensval.min.js](https://cdn.jsdelivr.net/gh/SENSEDGETSS/sens-validate@main/sensval.min.js)
  
 ## Single Validation
-	Use the data-sensval attribute to specify what kind of validation you want for each input field. 
-	For example, data-sensval="TX" ensures the input contains text only.
+Use the data-sensval attribute to specify what kind of validation you want for each input field. 
+For example, data-sensval="TX" ensures the input contains text only.
  ```html
 	Ex:
 	<input type="text" data-sensval="TX">
 ```
 ## Multiple Validations:
-	You can apply more than one validation type to a field by separating them with a ‘hyphen(-)’ 
- 	in the data-sensval attribute. 
- 	For example, data-sensval="TX-MN" makes sure the field is both text-only and mandatory.
+You can apply more than one validation type to a field by separating them with a ‘hyphen(-)’ 
+in the data-sensval attribute. 
+For example, data-sensval="TX-MN" makes sure the field is both text-only and mandatory.
 ```html
 	Ex:
 	<input type=” text” data-sensval= “TX-MN”>
 ```
 ## User-Defined Values for Validation:
-	You can specify extra details for certain validations. 
- 	For example, if you want to check that a number has exactly 10 digits, use data-sensval="NL#10".
+You can specify extra details for certain validations. 
+For example, if you want to check that a number has exactly 10 digits, use data-sensval="NL#10".
 ```html	
  	Ex:
 	<input type=” text” data-sensval=”NL#10-MN”>
 ```
 ## Form Validation: 
-	Use a button with an onclick event to trigger the validateForm function. This function 
- 	calls ValidateAll with the form’s id to check all input fields in the form for validity.
+Use a button with an onclick event to trigger the validateForm function. This function 
+calls ValidateAll with the form’s id to check all input fields in the form for validity.
 ```html
 	Ex:
 	<form id="formId">
@@ -62,13 +62,10 @@ Traditional validation methods often require users to create separate functions 
 	</form>
 ```
 ## Independent Validation:
-	By using the data-sensval attribute, each input field can be validated in real-time. This allows 
- 	validation to occur dynamically, such as when a user changes the input. As soon as the input 
-  	changes, the specific field is instantly validated, providing immediate feedback and ensuring 
-   	data accuracy throughout the process.
-
-
-
+By using the data-sensval attribute, each input field can be validated in real-time. This allows 
+validation to occur dynamically, such as when a user changes the input. As soon as the input 
+changes, the specific field is instantly validated, providing immediate feedback and ensuring 
+data accuracy throughout the process.
 
 ## Validations
         
@@ -101,8 +98,8 @@ Traditional validation methods often require users to create separate functions 
 | CE           | Custom Error          | Allows custom validation logic with a custom error message.                                                         |
 
 ## Note:
-        1. “MN” – the Input field Attribute value.
-        2.“NL#10” – ‘NL’-Mean by the Input Attribute value, 10 Defined the input field minimum length.
+1. “MN” – the Input field Attribute value.
+2.“NL#10” – ‘NL’-Mean by the Input Attribute value, 10 Defined the input field minimum length.
 
 
 ![code](https://github.com/user-attachments/assets/c085739f-af93-47e9-842b-9407519b98a7)
