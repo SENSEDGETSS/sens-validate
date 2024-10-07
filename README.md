@@ -20,7 +20,7 @@
 	as well as user-defined validation rules.
 ```
 	Using by NPM
-	To use the sensedge-validation package in your project, first, install it via npm.
+	To use the sensedge-validation package in your project, through npm.
  ```html
 	Ex:
 	<npm install sensedge-validation>
