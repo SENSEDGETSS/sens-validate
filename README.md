@@ -110,6 +110,9 @@ data accuracy throughout the process.
 ![Wrong](https://github.com/user-attachments/assets/2de27c70-3332-4721-bf7b-eb17d4cb1072)
 
 ## By Using React Component 
+## Key Functions:
+- const isValid = validateAll('validationForm'); this line validates the whole form by that corresponding form Id.
+- Also returns the validation result as a Boolean value (true or false). Using this return value you can execute your code by the validation result.
 ![React](https://github.com/user-attachments/assets/0aeeebfc-d881-43e5-8148-8970ed84b8c2)
 
 
