@@ -98,6 +98,7 @@
 
  
 	![code](https://github.com/user-attachments/assets/code.png) 
+ <img src="relative/path/in/repository/to/code.png" width="128"/>
 
 
 
