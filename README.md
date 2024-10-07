@@ -96,6 +96,10 @@
         1. “MN” – the Input field Attribute value.
         2.“NL#10” – ‘NL’-Mean by the Input Attribute value, 10 Defined the input field minimum length.
 
+ 
+	![code](https://github.com/user-attachments/assets/dfe014c4-dbaf-4935-bad7-121255201a57)
+
+
 
 
 
