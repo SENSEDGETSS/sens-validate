@@ -16,7 +16,8 @@
  ```html
 	Ex:
 	<script src="sensval.min.js"></script>
-	This manual provides detailed instructions on single and multiple validations, as well as user-defined validation rules.
+	This manual provides detailed instructions on single and multiple validations,
+	as well as user-defined validation rules.
 
 ```
 ### 2.2 Single Validation
@@ -27,7 +28,8 @@
 	<input type="text" data-sensval="TX">
 ```
 ### 2.3	Multiple Validations:
-	You can apply more than one validation type to a field by separating them with a ‘hyphen(-)’ in the data-sensval attribute. 
+	You can apply more than one validation type to a field by separating them with a ‘hyphen(-)’ 
+ 	in the data-sensval attribute. 
  	For example, data-sensval="TX-MN" makes sure the field is both text-only and mandatory.
 ```html
 	Ex:
