@@ -9,6 +9,7 @@ process by providing a unified solution for validating all types of input fields
 With sensval, users can easily implement validation by adding a data-sensval attribute to the 
 relevant input fields and forms, streamlining the entire process and saving valuable 
 development time.
+
 ## How to Use
 ## Installation
 To use the validation rules outlined in this document, include the sensval.min.js script in 
@@ -25,7 +26,7 @@ To use the sensedge-validation package through npm.
 	Ex:
 	<npm install sensedge-validation>
 ```
-	Using By CDN
+#### Using By CDN
 [https://cdn.jsdelivr.net/gh/SENSEDGETSS/sens-validate@main/sensval.min.js](https://cdn.jsdelivr.net/gh/SENSEDGETSS/sens-validate@main/sensval.min.js)
  
 ## Single Validation
