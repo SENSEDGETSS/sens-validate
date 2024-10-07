@@ -27,7 +27,7 @@
 ```
 	Using By CDN
  ```html
-	<https://cdn.jsdelivr.net/gh/SENSEDGETSS/sens-validate@main/sensval.min.js>
+	[https://cdn.jsdelivr.net/gh/SENSEDGETSS/sens-validate@main/sensval.min.js]
 ```
 ## Single Validation
 	Use the data-sensval attribute to specify what kind of validation you want for each input field. 
