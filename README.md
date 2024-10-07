@@ -43,8 +43,8 @@
 	<input type=” text” data-sensval=”NL#10”>
 ```
 ### 2.5	Form Validation: 
-	Use a button with an onclick event to trigger the validateForm function. 
- 	This function calls ValidateAll with the form’s id to check all input fields in the form for validity.
+	Use a button with an onclick event to trigger the validateForm function. This function 
+ 	calls ValidateAll with the form’s id to check all input fields in the form for validity.
 ```html
 	Ex:
 	<form id="formId">
@@ -55,8 +55,9 @@
 ```
 ### 2.6	Independent Validation:
 	By using the data-sensval attribute, each input field can be validated in real-time. 
- 	This allows validation to occur dynamically, such as when a user changes the input. As soon as the input changes, 
-  	the specific field is instantly validated, providing immediate feedback and ensuring data accuracy throughout the process.
+ 	This allows validation to occur dynamically, such as when a user changes the input. 
+  	As soon as the input changes, the specific field is instantly validated, providing 
+   	immediate feedback and ensuring data accuracy throughout the process.
 
 
 
