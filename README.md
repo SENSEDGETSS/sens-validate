@@ -102,5 +102,6 @@
 
 ![code](https://github.com/user-attachments/assets/c085739f-af93-47e9-842b-9407519b98a7)
 
+![Correct](https://github.com/user-attachments/assets/c17d5e66-1cab-44af-95da-c3f373de253e)
 
-
+![Wrong](https://github.com/user-attachments/assets/2de27c70-3332-4721-bf7b-eb17d4cb1072)
