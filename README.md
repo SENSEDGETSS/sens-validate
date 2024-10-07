@@ -40,7 +40,7 @@
  	For example, if you want to check that a number has exactly 10 digits, use data-sensval="NL#10".
 ```html	
  	Ex:
-	<input type=” text” data-sensval=”NL#10”>
+	<input type=” text” data-sensval=”NL#10-MN”>
 ```
 ## Form Validation: 
 	Use a button with an onclick event to trigger the validateForm function. This function 
