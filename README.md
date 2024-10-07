@@ -19,8 +19,8 @@ your HTML file and apply the data-sensval attribute to the input fields that req
 	This manual provides detailed instructions on single and multiple validations,
 	as well as user-defined validation rules.
 ```
-Using by NPM
-	To use the sensedge-validation package through npm.
+### Using by NPM
+To use the sensedge-validation package through npm.
  ```html
 	Ex:
 	<npm install sensedge-validation>
