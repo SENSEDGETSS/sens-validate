@@ -108,3 +108,8 @@ data accuracy throughout the process.
 ![Correct](https://github.com/user-attachments/assets/c17d5e66-1cab-44af-95da-c3f373de253e)
 
 ![Wrong](https://github.com/user-attachments/assets/2de27c70-3332-4721-bf7b-eb17d4cb1072)
+
+## By Using React Component 
+![React](https://github.com/user-attachments/assets/0aeeebfc-d881-43e5-8148-8970ed84b8c2)
+
+
