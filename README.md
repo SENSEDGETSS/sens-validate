@@ -3,7 +3,7 @@
 # Document Control Sheet
 
 ## Why SENSVAL
-        Traditional validation methods often require users to create separate functions for each input 
+Traditional validation methods often require users to create separate functions for each input 
 	field and form, which can be time-consuming and complex. The sensval library simplifies this 
  	process by providing a unified solution for validating all types of input fields and forms. 
   	With sensval, users can easily implement validation by adding a data-sensval attribute to the 
@@ -26,7 +26,7 @@
 	<npm install sensedge-validation>
 ```
 	Using By CDN
- 	[https://cdn.jsdelivr.net/gh/SENSEDGETSS/sens-validate@main/sensval.min.js](https://cdn.jsdelivr.net/gh/SENSEDGETSS/sens-validate@main/sensval.min.js)
+[https://cdn.jsdelivr.net/gh/SENSEDGETSS/sens-validate@main/sensval.min.js](https://cdn.jsdelivr.net/gh/SENSEDGETSS/sens-validate@main/sensval.min.js)
  
 ## Single Validation
 	Use the data-sensval attribute to specify what kind of validation you want for each input field. 
