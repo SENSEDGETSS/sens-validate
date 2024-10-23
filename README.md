@@ -102,19 +102,17 @@ data accuracy throughout the process.
 - “MN” – the Input field Attribute value.
 - “NL#10” – ‘NL’-Mean by the Input Attribute value, 10 Defined the input field minimum length.
 
-
-![code](https://github.com/user-attachments/assets/c085739f-af93-47e9-842b-9407519b98a7)
-
 ![code](https://github.com/user-attachments/assets/1671893c-23fb-45b2-8aaf-e5d322362d8a)
 
-![Correct](https://github.com/user-attachments/assets/c17d5e66-1cab-44af-95da-c3f373de253e)
+![Correct](https://github.com/user-attachments/assets/4b3d15fd-824b-415b-9827-d2d3d8c0312f)
 
-![Wrong](https://github.com/user-attachments/assets/2de27c70-3332-4721-bf7b-eb17d4cb1072)
+![Wrong](https://github.com/user-attachments/assets/52d1b454-5d32-4a4c-bef2-7992e43b9420)
+
 
 ## By Using React Component 
 ## Key Functions
 - const isValid = validateAll('validationForm'); this line validates the whole form by that corresponding form Id.
 - Also returns the validation result as a Boolean value (true or false). Using this return value you can execute your code by the validation result.
-![React](https://github.com/user-attachments/assets/0aeeebfc-d881-43e5-8148-8970ed84b8c2)
 
+![React](https://github.com/user-attachments/assets/26091d99-1e8d-4564-8c30-f3f283854fa3)
 
